@@ -39,7 +39,7 @@ class LoginController extends Controller
         Auth::guard('customer')->login($user);
 
         return response()->json([
-            'success' => true
+            'success' => true,
         ]);
     }
 }
